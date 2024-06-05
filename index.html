@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./movie.png" type="image/x-icon">    
+  <title>CineRealm MovieDataBase</title>
+</head>
+<body>
+  <header>
+    <h1>CineRealm MovieDataBase</h1>
+    <div class="searchBar">
+      <input type="text" id="search" placeholder="Search movies">
+      <button id="searchButton">Search</button>
+    </div>
+    <div class="filterSort">
+      <select id="genreFilter">
+        <option value="">All Genres</option>
+        <option value="28">Action</option>
+        <option value="35">Comedy</option>
+        <option value="18">Drama</option>
+      </select>
+      <select id="sortBy">
+        <option value="popularity">Popularity (descendent)</option>
+        <option value="voteAverageDesc">Rating (descendent)</option>
+        <option value="releaseDateDesc">Release Date (descendent)</option>
+      </select>
+    </div>
+    
+  </header>
+  <main>
+    <div class="movieList" id="movieList"></div>
+
+    <div class="type" id="movieType">
+      <div class="contentType">
+        <div id="contentType"></div>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
+    <div id="searchResult" class="searchResultContainer">
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
